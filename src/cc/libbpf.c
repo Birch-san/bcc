@@ -191,6 +191,8 @@ static struct bpf_helper helpers[] = {
   {"rc_pointer_rel", "5.0"},
   {"spin_lock", "5.1"},
   {"spin_unlock", "5.1"},
+  {"probe_read_to_map", "4.15"},
+  {"probe_read_str_to_map", "4.15"},
 };
 
 static uint64_t ptr_to_u64(void *ptr)
