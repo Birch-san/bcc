@@ -273,6 +273,10 @@ static int (*bpf_trace_printk_)(const char *fmt, u64 fmt_size, ...) =
   (void *) BPF_FUNC_trace_printk;
 static int (*bpf_probe_read_str)(void *dst, u64 size, const void *unsafe_ptr) =
   (void *) BPF_FUNC_probe_read_str;
+static int (*bpf_probe_read_to_map)(void *dst, u64 size, const void *unsafe_ptr) =
+  (void *) BPF_FUNC_probe_read_to_map;
+static int (*bpf_probe_read_str_to_map)(void *dst, u64 size, const void *unsafe_ptr) =
+  (void *) BPF_FUNC_probe_read_str_to_map;
 int bpf_trace_printk(const char *fmt, ...) asm("llvm.bpf.extra");
 static inline __attribute__((always_inline))
 void bpf_tail_call_(u64 map_fd, void *ctx, int index) {
