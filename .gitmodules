@@ -1,3 +1,5 @@
 [submodule "src/cc/libbpf"]
 	path = src/cc/libbpf
-	url = https://github.com/libbpf/libbpf.git
+	# url = https://github.com/libbpf/libbpf.git
+	url = https://github.com/Birch-san/libbpf.git
+	branch = probe_read-map-helpers
