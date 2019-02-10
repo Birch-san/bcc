@@ -2426,7 +2426,9 @@ union bpf_attr {
 	FN(msg_pop_data),		\
 	FN(rc_pointer_rel),		\
 	FN(spin_lock),			\
-	FN(spin_unlock),
+	FN(spin_unlock),		\
+	FN(probe_read_to_map),		\
+	FN(probe_read_str_to_map),
 
 /* integer value in 'imm' field of BPF_CALL instruction selects which helper
  * function eBPF program intends to call
